@@ -85,22 +85,14 @@ git clone https://github.com/masse06/delivery-intelligence.git
 cd delivery-intelligence
 ```
 
-**2. Configurar la base de datos**
-
-Crea un archivo `application.properties` en `src/main/resources/` basándote en el archivo de ejemplo incluido:
-```bash
-cp src/main/resources/application.properties.example src/main/resources/application.properties
-# Rellena con tus credenciales de PostgreSQL
-```
-
-**3. Ejecutar el Backend**
+**2. Ejecutar el Backend**
 
 Lanza la aplicación Spring Boot desde tu IDE o mediante Maven:
 ```bash
 ./mvnw spring-boot:run
 ```
 
-**4. Lanzar el Dashboard**
+**3. Lanzar el Dashboard**
 ```bash
 pip install -r requirements.txt
 streamlit run dashboard.py
